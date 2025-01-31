@@ -5,8 +5,8 @@
 #include <stdint.h>
 #include "soc/soc_caps.h"
 
-#define USB_VID          0x239A
-#define USB_PID          0x8125
+#define USB_VID 0x303a
+#define USB_PID 0x1001
 #define USB_MANUFACTURER "AMOX"
 #define USB_PRODUCT      "ION Control ESP32-S3"
 #define USB_SERIAL       ""  // Empty string for MAC address
