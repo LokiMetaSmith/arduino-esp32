@@ -15,13 +15,13 @@
 #define LED_BUILTIN 17
 #define BUILTIN_LED LED_BUILTIN  // backward compatibility
 
-#define PIN_NEOPIXEL 18
-#define NEOPIXEL_PIN 18
-// RGB_BUILTIN and RGB_BRIGHTNESS can be used in new Arduino API rgbLedWrite() and digitalWrite() for blinking
-#define RGB_BUILTIN    (PIN_NEOPIXEL + SOC_GPIO_PIN_COUNT)
+// Some boards have too low voltage on this pin (board design bug)
+// Use different pin with 3V and connect with 48
+// and change this setup for the chosen pin (for example 38)
+#define PIN_RGB_LED 18
+// BUILTIN_LED can be used in new Arduino API digitalWrite() like in Blink.ino
+#define RGB_BUILTIN    PIN_RGB_LED
 #define RGB_BRIGHTNESS 64
-
-#define NEOPIXEL_NUM    1
 
 #define TC_SO 48
 
